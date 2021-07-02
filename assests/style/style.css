@@ -477,13 +477,13 @@ font-family: var(--primary_font);
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: #ffffff;
   border-radius: .4rem;
 }
 .navbar_container .nav_section .navbar_items .navbar_item.social_media .social_media_icon svg{
   width: 24px;
   height: 24px;
-  color: var(--primary_color);
+  color: #ffffff;
 }
 
    .navbar_container .mobile_header .mobilelogo img{
@@ -876,13 +876,13 @@ font-family: var(--primary_font);
       display: flex;
       justify-content: center;
       align-items: center;
-
+      color: #ffffff;
       border-radius: .4rem;
     }
     .navbar_container .nav_section .navbar_items .navbar_item.social_media .social_media_icon svg{
       width: 21px;
       height: 21px;
-      color: var(--primary_color);
+      color: #ffffff;
     }
   .mobile_header .menu{
     top: 20px;
