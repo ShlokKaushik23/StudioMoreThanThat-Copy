@@ -329,7 +329,7 @@ font-family: var(--primary_font);
 .comingsoon_container{
   position: fixed;
   display: block;
-  z-index: -1;
+  z-index: 10;
   top: 222px;
   left: 138px;
   color: var(--primary_color);
@@ -350,11 +350,18 @@ font-family: var(--primary_font);
   margin-top: -12px;
   margin-left: 22px;
 }
+
 .comingsoon_container .soon span{
   display: inline-block;
   transform: scale(-1,1);
 }
-
+.comingsoon_container a{
+  display: inline-block;
+  position:relative;
+  color: var(--primary_color);
+  z-index: 1;
+  text-decoration: underline;
+}
 
 
 
