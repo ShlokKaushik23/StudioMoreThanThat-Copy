@@ -320,6 +320,39 @@ font-family: var(--primary_font);
   width: 81px;
 }
 
+/* ========== COMING SOON PAGE ============== */
+.carousel_container .image_container .mySlides.placeholderImg{
+  margin-bottom: -5px;
+}
+.comingsoon_container{
+  position: absolute;
+  display: block;
+  z-index: 10;
+  top: 410px;
+  left: 138px;
+  color: var(--primary_color);
+}
+.comingsoon_container p{
+  font-size: 20px;
+  font-family: var(primary_font);
+
+}
+.comingsoon_container h1{
+  font-size: 80px;
+  font-family: 'dream_orphansregular';
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+.comingsoon_container .soon{
+  margin-top: -12px;
+  margin-left: 22px;
+}
+.comingsoon_container .soon span{
+  display: inline-block;
+  transform: scale(-1,1);
+}
+
 
 
 
@@ -378,6 +411,32 @@ font-family: var(--primary_font);
   white-space:nowrap;
   /* margin-left: -4px; */
 }
+
+
+
+/* ====================== WORK PAGE =========================== */
+
+.work_container{
+  height: 300vh;
+  width: 100%;
+  background: var(--primary_color);
+  margin-top: 135px;
+}
+
+.work_container .work_section{
+  display: flex;
+  font-size: var(--primary_font);
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* ===== MOBILE VIEW ========= */
