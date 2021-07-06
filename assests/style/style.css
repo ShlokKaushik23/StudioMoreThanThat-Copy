@@ -323,12 +323,14 @@ font-family: var(--primary_font);
 /* ========== COMING SOON PAGE ============== */
 .carousel_container .image_container .mySlides.placeholderImg{
   margin-bottom: -5px;
+
 }
+
 .comingsoon_container{
   position: absolute;
   display: block;
   z-index: 10;
-  top: 410px;
+  top: 156px;
   left: 138px;
   color: var(--primary_color);
 }
@@ -461,6 +463,7 @@ font-family: var(--primary_font);
     display: relative;
     width: 100%;
     z-index: -1;
+
   }
   .header .blackpart{
     display: none;
@@ -486,6 +489,7 @@ font-family: var(--primary_font);
 .navbar_container{
   margin-top: 36px;
 }
+
 
   .navbar_container .nav_section  {
     display: none;
