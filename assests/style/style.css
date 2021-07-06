@@ -327,7 +327,7 @@ font-family: var(--primary_font);
 }
 
 .comingsoon_container{
-  position: absolute;
+  position: fixed;
   display: block;
   z-index: -1;
   top: 222px;
