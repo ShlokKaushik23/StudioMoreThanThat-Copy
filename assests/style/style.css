@@ -499,7 +499,6 @@ font-family: var(--primary_font);
 
 
   .navbar_container .nav_section  {
-    display: none;
     position: absolute;
     transform: translateX(550px);
     transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
@@ -508,7 +507,7 @@ font-family: var(--primary_font);
     height: 120vh;
     width: 70%;
     background: var(--green_color);
-    z-index: -1;
+    z-index: 4;
     color: var(--primary_color);
 
   }
@@ -590,6 +589,7 @@ font-family: var(--primary_font);
     right: 30px;
     width: 45px;
     align-items: center;
+    z-index: 1000;
 
   }
   .menu-open #nav_section {
@@ -721,6 +721,11 @@ font-family: var(--primary_font);
     background: var(--primary_color)
   }
 
+/* ============ COMING SOON MOBILE =============== */
+.comingsoon_container{
+  z-index: 100;
+}
+
   .about_container{
     display: none;
   }
@@ -837,7 +842,6 @@ font-family: var(--primary_font);
     background: var(--primary_color);
     overflow-x: hidden;
     width: 100%;
-    z-index: -1;
     height: 100%;
     position: relative;
   }
@@ -899,9 +903,6 @@ font-family: var(--primary_font);
       z-index: -1;
 }
 
-
-
-
   .carousel_container_mobile{
     margin-top:6.875rem;
   }
@@ -960,6 +961,40 @@ font-family: var(--primary_font);
     width: 45px;
     align-items: center;
   }
+
+/* ============== MOBILE COMING SOON ================== */
+.comingsoon_container{
+  position: fixed;
+  display: block;
+  z-index: 10;
+  top: 60vh;
+  left: 25px;
+  color: var(--primary_color);
+}
+.comingsoon_container p{
+  font-size: 18px;
+  font-family: var(primary_font);
+
+}
+.comingsoon_container h1{
+  font-size: 60px;
+  font-family: 'dream_orphansregular';
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+.comingsoon_container .soon{
+  margin-top: -12px;
+  margin-left: 16px;
+}
+.comingsoon_container a{
+  display: inline-block;
+  position:relative;
+  color: var(--primary_color);
+  z-index: 10;
+  text-decoration: underline;
+}
+/* ============ ABOUT CONTAINER ============ */
   .about_container_mobile{
     width: 100vw;
     display: block;
