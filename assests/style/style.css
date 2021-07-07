@@ -969,11 +969,11 @@ font-family: var(--primary_font);
   z-index: 10;
   top: 60vh;
   left: 25px;
-  color: var(--primary_color);
+  font-family: #ffffff;
 }
 .comingsoon_container p{
   font-size: 18px;
-  font-family: var(primary_font);
+  font-family: #ffffff;
 
 }
 .comingsoon_container h1{
@@ -982,6 +982,8 @@ font-family: var(--primary_font);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: lighter;
+  font-family: #ffffff;
+
 }
 .comingsoon_container .soon{
   margin-top: -12px;
@@ -990,7 +992,7 @@ font-family: var(--primary_font);
 .comingsoon_container a{
   display: inline-block;
   position:relative;
-  color: var(--primary_color);
+  font-family: #ffffff;
   z-index: 10;
   text-decoration: underline;
 }
