@@ -313,12 +313,19 @@ font-family: var(--primary_font);
   align-items: flex-end;
 
 }
+.about_container .about_section .about_heading_container  a{
+  z-index: 100;
+
+}
 .about_container .about_section .about_heading_container img{
   margin-left: -10px;
   margin-bottom: -22px;
   height: 51px;
   width: 81px;
+  z-index: 100;
+  display: inline-block;
 }
+
 
 /* ========== COMING SOON PAGE ============== */
 .carousel_container .image_container .mySlides.placeholderImg{
@@ -757,6 +764,7 @@ font-family: var(--primary_font);
 .about_container_mobile .about_section_mobile .read_more_mobile img{
   width: 152px;
   height: 95.70;
+  z-index: 100;
 }
 .about_container_mobile .about_section_mobile .read_more_mobile {
   /* position: absolute; */
@@ -906,6 +914,9 @@ font-family: var(--primary_font);
   .carousel_container_mobile{
     margin-top:6.875rem;
   }
+  .carousel_container_mobile .image_container_mobile.placeholder_mobile img{
+    margin-bottom: -5px;
+  }
   .navbar_container .mobile_header .mobilelogo img{
     /* height: 129px; */
     height: 8.063rem;
@@ -967,7 +978,7 @@ font-family: var(--primary_font);
   position: fixed;
   display: block;
   z-index: 10;
-  top: 60vh;
+  top: 55vh;
   left: 25px;
   font-family: #ffffff;
 }
