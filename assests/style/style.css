@@ -1106,7 +1106,7 @@ font-family: var(--primary_font);
   .footer_container .footer_section .social_media_icons .icons svg{
     height: 14px;
     width: 14px;
-
+    z-index: 100;
   }
 
 }
