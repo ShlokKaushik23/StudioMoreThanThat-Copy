@@ -113,8 +113,10 @@ backdrop-filter: blur( 4px );
   margin-top: -100px;
   padding: 0 4.438rem;
   opacity: 1;
-  z-index: 1000;
+  z-index: 100;
+
 }
+
 .navbar_container .nav_section ul{
   display: flex;
   margin: 0;
@@ -286,7 +288,7 @@ font-family: var(--primary_font);
   margin-left: 11rem;
   position: absolute;
   margin-top: 3rem;
-  z-index: -99;
+  z-index: 10;
 }
 .about_container .about_section .about_title{
   display: flex;
