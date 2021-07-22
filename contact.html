@@ -26,7 +26,8 @@
 <body>
   <header class="header">
 
-    <nav class="navbar_container" id="navbar_container">
+
+    <nav class="navbar_container hideshade" id="navbar_container">
       <div class="nav_section" id="nav_section">
 
       <ul class="navbar_items" id="navbar_items">
@@ -41,7 +42,7 @@
         <li class="navbar_item"><a class="underline" href="comingsoon.html">Work</a></li>
         <li class="navbar_item"><a class="underline" href="comingsoon0.html">Program</a></li>
         <li class="navbar_item"><a class="underline" href="comingsoon1.html">About</a></li>
-        <li class="navbar_item"><a class="underline" href="contact.html">Contact</a></li>
+        <li class="navbar_item"><a class="underline active" href="contact.html">Contact</a></li>
         <!-- <div class="mobile_social_media"> -->
 
         <li class="navbar_item social_media">
@@ -68,10 +69,6 @@
         </a>
       </li>
 
-
-
-
-        </li>
       </ul>
 
 
@@ -80,10 +77,10 @@
 
      <a href="index.html">  <div class="sml-logo"><img src="assests\img\white_logo.png" alt=""></div></a>
       <div class="mobile_header">
-        <a href="index.html"><div class="mobilelogo"><img src="assests\img\black_logo.png" border="0"></div></a>
+        <a href="index.html"><div class="mobilelogo"><img src="assests\img\1@2x.png" border="0"></div></a>
 
         <div class="js-menu menu" type="button">
-        <div class="toggle" id="toggle"></div>
+        <div class="toggle white" id="toggle"></div>
         </div>
         <!-- <div class="toggle" id="toggle"><i class="fas fa-times"></i></div> -->
       </div>
@@ -92,33 +89,74 @@
   </header>
 
 
+
+
   <main class="main">
-     <section class="carousel_container">
-       <div class="image_container">
-         <div class="mySlides placeholderImg"><img src="assests\img\comingsoon\placeholder4.jpg" alt=""></div>
+    <section class="carousel_container_mobile">
+      <div class="image_container_mobile">
+        <div class="mySlides_mobile fade"><img src="assests\img\2.jpg" alt=""></div>
+      </div>
+    </section>
 
+    <section class="greenplate_contact" id="fixed">
+      <div class="plate" id="fixed">
+      </div>
+      <div class="whiteplate"></div>
+    </section>
+
+
+   <section class="contact_container">
+       <div class="contact_container_left">
+         <div class="contact_details">
+           <p class="name">Nitish Jain</p>
+           <p class="work">ARTISTIC DIRECTOR</p>
+             <a class="email" href="mailto: nitish@studiomorethanthat.com">nitish@studiomorethanthat.com</a>
+           <div class="button_cvp_section">
+
+           <div class="button_cvp">
+             <a href="https://drive.google.com/file/d/11EG7oGZ-ibzmJIH3A-Hr6O_I2a7UzZO6/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button type="button" name="button">CURRICULUM VITAE</button>
+           </div>
+           <div class="button_cvp">
+             <a href="https://drive.google.com/file/d/11h6BjG5VQSY0hbVFiM9E4DI0Ggiwt2jC/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button type="button" name="button">PORTFOLIO</button></a>
+           </div>
+         </div>
+
+         </div>
        </div>
-       <div class="carosuel_bottom"></div>
-     </section>
 
-     <section class="carousel_container_mobile placeholder_mobile">
-       <div class="image_container_mobile placeholder_mobile">
-         <div class="mySlides_mobile fade"><img src="assests\img\comingsoon\mob-placeholder-4.jpg" alt=""></div>
+       <div class="contact_container_right">
+
+         <div class="contact_reachus">
+           <p class="contact_us">Contact Us</p>
+            <div class="contact_form">
+              <div class="contact_name">
+                <div class="fname">
+                  <input type="text" name="" value="" placeholder="First Name">
+                </div>
+
+                <div class="lname">
+
+                  <input type="text" name="" value="" placeholder="Last Name">
+                </div>
+
+              </div>
+
+              <div class="contact_detail">
+                <div class="email">
+
+                <input type="text" name="" value="" placeholder="Email">
+               </div>
+                 <textarea name="name" rows="5" cols="42" placeholder="Message"></textarea>
+
+              </div>
+
+              <div class="submit_btn">
+                <button type="button" name="button">Submit</button>
+              </div>
+            </div>
+         </div>
        </div>
-     </section>
-
-
-     <section class="comingsoon_container">
-       <p>There's more</p>
-       <h1>Coming</h1>
-       <h1 class="soon">Soo<span>n</span></h1>
-       <p>In the meantime, stay tuned with <br>
-       us on
-      <a class="instagramredirect" href="https://www.instagram.com/studio.morethanthat/">Instagram</a></p>
-     </section>
-
-
-
+    </section>
 
   </main>
 

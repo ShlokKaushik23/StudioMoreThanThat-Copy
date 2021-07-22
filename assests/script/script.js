@@ -18,13 +18,18 @@ var scroll = $(window).scrollTop();
 });
 
 
+// ======== ACTIVE NAVBAR
 
+
+
+
+// ========== GREEN BANNER STICKY
 
 
 $(window).scroll(function() {
 var scroll = $(window).scrollTop();
 
-if (scroll >= 545) {
+if (scroll >= 580) {
     $(".greenplate").addClass("fixedPos");
 }
 else{
@@ -35,10 +40,11 @@ else{
 
 
 
+
  $(window).scroll(function() {
  var scroll = $(window).scrollTop();
 
- if (scroll >= 1160) {
+ if (scroll >= 1180) {
      $(".greenplate_tab").addClass("fixedPos");
  }
  else{
@@ -46,6 +52,26 @@ else{
      $(".greenplate_tab").removeClass("fixedPos");
  }
   });
+
+
+
+// ========== CONTACT PAGE GREEN BANNER ============
+$(window).scroll(function() {
+var scroll = $(window).scrollTop();
+
+if (scroll >= 180) {
+    $(".greenplate_contact").addClass("fixedPos");
+}
+else{
+
+    $(".greenplate_contact").removeClass("fixedPos");
+}
+ });
+
+
+
+
+
 
 
    $(window).scroll(function() {
@@ -97,24 +123,7 @@ function myRemove() {
   document.getElementById('nav_section').style.display = "none";
 }
 
-// Change Image on Scroll
 
-// $(document).ready(function() {
-//   $(window).on("scroll", function() {
-//     console.log($(this).scrollTop())
-//     if($(this).scrollTop() >= 980){
-//       // set to new image
-//       $(".mobilelogo img").attr("src","assests\img\black_logo.png");
-//     } else {
-//       //back to default
-//       $(".mobilelogo img").attr("src","assests\img\small_black_logo.png");
-//     }
-//   })
-// })
-//
-// https://i.ibb.co/W33zq4c/small-black-logo.png
-//
-// https://i.ibb.co/cL95jrP/black-logo.png
 
 var slideIndex = 0;
 var slideIndexCurrent = 0;
@@ -226,5 +235,5 @@ if (slideIndexMobile > slidesMobile.length) {slideIndexMobile = 1}
 slidesMobile[slideIndexMobile -1].style.display = "block";
 
 
-setTimeout(showSlidesMobile, 1200000); // Change image every x seconds
+setTimeout(showSlidesMobile, 12000); // Change image every x seconds
 }
