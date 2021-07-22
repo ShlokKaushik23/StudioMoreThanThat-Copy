@@ -350,7 +350,7 @@ position: fixed;
   flex: 1 1 auto;
 }
 .work_container .work_image_section .portrait .portrait_sec{
-  max-width: 380px;
+  width: 30vw;
   height: 630px;
 
 }
@@ -358,6 +358,7 @@ position: fixed;
   height: 100%;
   width: 100%;
 }
+
 .work_container .work_image_section .portrait .portrait_sec .work_description{
   font-size: 18px;
   line-height: 28px;
@@ -624,7 +625,7 @@ position: fixed;
 }
 .work_container .other_happening_section .other_happening_box{
 
-  max-width: 250px;
+  max-width: 20vw;
   height: 350px;
   display: block;
 
