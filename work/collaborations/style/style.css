@@ -462,7 +462,7 @@ position: fixed;
   margin-bottom: 20px;
 }
 .work_container .bottom_about_section .about_img{
-  width: 600px;
+  width: 70%;
   height: 400px;
 }
 .work_container .bottom_about_section .about_img img{
@@ -625,7 +625,7 @@ position: fixed;
 }
 .work_container .other_happening_section .other_happening_box{
 
-  max-width: 20vw;
+  max-width: 260px;
   height: 350px;
   display: block;
 
