@@ -359,13 +359,12 @@ position: fixed;
 .work_container .work_image_section .portrait .portrait_sec img{
   height: 100%;
   width: 100%;
-  display: grid;
-  gap: 10px;
+
 }
 
 .work_container .work_image_section .portrait .portrait_sec .work_description{
   font-size: 18px;
-  line-height: 26.6px;
+  line-height: 22.8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -374,7 +373,7 @@ position: fixed;
 }
 .work_container .work_image_section .portrait .portrait_sec .work_description .work_description_center{
    width: 380px;
-   height: 472px;
+   height: 500px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -384,7 +383,6 @@ position: fixed;
 
 .work_container .work_image_section .portrait .portrait_sec .work_description .work_description_center .description_part p{
   width: 280px;
-  
   display: block;
   line-height: 28px;
 }
@@ -397,7 +395,7 @@ position: fixed;
 }
 
 .work_container .work_image_section .portrait .portrait_sec span {
-  margin-bottom: 27px;
+  margin-bottom: 20px;
   margin-top: -7px;
 }
 
