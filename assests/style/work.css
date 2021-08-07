@@ -122,11 +122,12 @@ header{
 }
 
 .logo_work img{
-  height: 200px;
-  width: 114px;
- margin-top: -150px;
+  height: 150px;
+  /* width: 114px; */
+ margin-top: 40px;
 
  margin-bottom: 10px;
+ z-index: 100;
 }
 
 .left_panel{
@@ -148,9 +149,9 @@ header{
 position: fixed;
   top: 76px;
   right: 0px;
-  z-index: 9;
+  z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 
@@ -160,16 +161,17 @@ position: fixed;
   text-align: right;
 
   font-family: 'dream_orphansregular';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 2.72px;
   color: #777777;
 }
 .right_panel .categories_menu .categories_items{
-  margin-top: 30px;
+  margin-top: 150px;
   margin-right: 12px;
+  font-size: 16px;
 }
 .right_panel .categories_menu .categories_items .categories_item a{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   position: relative;
   display: block;
   color: #777777;
@@ -209,8 +211,8 @@ position: fixed;
   /* width: 100%; */
   background: #fff;
   margin-bottom: 56px;
-  margin-left: 15px;
-  margin-right: 15px;
+  /* margin-left: 15px; */
+  /* margin-right: 15px; */
   display: flex;
   z-index: -2;
 
@@ -220,8 +222,8 @@ position: fixed;
 }
 
 .work_section .work_container .work_section_container .work_img{
-  width: 496px;
-  height: 400px;
+  width: 38.75vw;
+  height: 63.96vh;
 }
 
 .work_section .work_container .work_section_container .work_img img{
@@ -230,8 +232,8 @@ position: fixed;
 }
 
 .work_section .work_container .work_section_container .work_description{
-  width: 496px;
-  height: 400px;
+  width: 38.75vw;
+  height: 63.96vh;
   display: grid;
   place-items: center;
   font-size: 40px;
@@ -257,6 +259,10 @@ position: fixed;
 }
 .footer_container{
   z-index: 10;
+
+  position: relative;
+  bottom: 0;
+  left: 0;
 }
 
 /* ============ TABLET SIZE =============== */
@@ -267,9 +273,7 @@ position: fixed;
     height: 136px;
     background-color: #fff;
   }
-   .work_section{
-     /* display: none; */
-   }
+
    .work_section .work_container{
      /* display: none; */
      background: darkgreen;
