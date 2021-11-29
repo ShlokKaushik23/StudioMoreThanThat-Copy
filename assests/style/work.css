@@ -1916,7 +1916,8 @@ margin-top: -10px;
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (min-device-width: 320px) 
+and (max-device-width: 480px){
 
  html{
    margin: 0;
