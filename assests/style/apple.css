@@ -1,12 +1,17 @@
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait and Landscape */
+
+.work_card_container{
+  display: none;
+}
 @media only screen 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
 .work_card_container{
 height: 100%;
+display: block;
 }
 
 .card_box_container{
@@ -608,15 +613,15 @@ and (max-device-width: 375px) {
               }
               
               .card_box_container .card_inner{
-                      height: calc(200px + 48px + 24px );
-                      width: 200px;
+                      height: calc(195px + 48px + 24px );
+                      width: 195px;
                       position: relative;
                       margin-bottom: 48px;
                       background-color: #f7f7f7;
               }
               .card_box_container .card_inner .card_front .card_img{
-                      height: 200px;
-                      width: 200px;
+                      height: 195px;
+                      width: 195px;
                       display: block;
                       top: 0;
                       left: 0;
