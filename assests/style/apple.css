@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait and Landscape */
@@ -15,10 +22,19 @@ display: block;
 }
 
 .card_box_container{
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
  position: relative;
  margin-top: calc(200px + 48px);
  margin-left: 340px;
@@ -46,9 +62,15 @@ display: block;
    background-color: #f7f7f7;
    color: #121212;
    height: calc(48px + 48px + 48px);
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    font-size: 2rem;
    -webkit-transform: rotateX(180deg);
    transform: rotateX(180deg);
@@ -60,31 +82,45 @@ display: block;
         position: absolute;
         top: 0;
         left: 0;
+        background: -webkit-gradient(linear,left top, left bottom,from(rgba(18, 18, 18, 1)),to(rgba(18, 18, 18, 1)));
+        background: -o-linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
         background: linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
         content: '';
         width: 100%;
         height: 100%;
         opacity: 0;
-        transition: 0.5s all linear;
+        -webkit-transition: 0.001s all linear;
+        -o-transition: 0.001s all linear;
+        transition: 0.001s all linear;
       }
       
       .card_inner:hover::after{
         opacity: 1;
-        transition: 0.2s all ease;
+        -webkit-transition: 0.001s all ease;
+        -o-transition: 0.001s all ease;
+        transition: 0.001s all ease;
       }
       
   
       
       .content{
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
-              justify-content: center;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
         position: absolute;
         bottom: 50%;
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
         z-index: 2;
         opacity: 0;
-        transition: 0.8s cubic-bezier(0, .91, .1, .9);
+        -webkit-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+        -o-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+        transition: 0.001s cubic-bezier(0, .91, .1, .9);
       }
       
       .content p{
@@ -96,24 +132,39 @@ display: block;
         
         color: #fff;
       }
+      .content .invert{
+        position:absolute;
+        -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+        margin-top: 200px;
+      }
       .card_inner:hover .content{
         bottom: 50%;
         opacity: 1;
-        transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.001s ease-in-out 0s;
+        -o-transition: all 0.001s ease-in-out 0s;
+        transition: all 0.001s ease-in-out 0s;
 
       }
       
       .content a{
-        display: -webkit-flex;
         display: -ms-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         -ms-align-items: center;
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         text-decoration: none;
         color: #fff;
         font-size: 1.5rem;
-        transition: 0.5s ease;
+        -webkit-transition: 0.001s ease;
+        -o-transition: 0.001s ease;
+        transition: 0.001s ease;
         text-decoration: underline;
    font-family: 'dream_orphansregular';
 
@@ -139,10 +190,19 @@ display: block;
                 }
                 
                 .card_box_container{
+                 display: -webkit-box;
+                 display: -ms-flexbox;
                  display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 flex-direction: column;
+                 -webkit-box-pack: center;
+                     -ms-flex-pack: center;
+                         justify-content: center;
+                 -webkit-box-align: center;
+                     -ms-flex-align: center;
+                         align-items: center;
+                 -webkit-box-orient: vertical;
+                 -webkit-box-direction: normal;
+                     -ms-flex-direction: column;
+                         flex-direction: column;
                  position: relative;
                  margin-top: calc(200px + 48px);
                  margin-left: 290px;
@@ -170,9 +230,15 @@ display: block;
                    background-color: #f7f7f7;
                    color: #121212;
                    height: calc(48px + 48px + 48px);
+                   display: -webkit-box;
+                   display: -ms-flexbox;
                    display: flex;
-                   justify-content: center;
-                   align-items: center;
+                   -webkit-box-pack: center;
+                       -ms-flex-pack: center;
+                           justify-content: center;
+                   -webkit-box-align: center;
+                       -ms-flex-align: center;
+                           align-items: center;
                    font-size: 2rem;
                    -webkit-transform: rotateX(180deg);
                    transform: rotateX(180deg);
@@ -184,31 +250,45 @@ display: block;
                         position: absolute;
                         top: 0;
                         left: 0;
+                        background: -webkit-gradient(linear,left top, left bottom,from(rgba(18, 18, 18, 1)),to(rgba(18, 18, 18, 1)));
+                        background: -o-linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                         background: linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                         content: '';
                         width: 100%;
                         height: 100%;
                         opacity: 0;
-                        transition: 0.5s all linear;
+                        -webkit-transition: 0.001s all linear;
+                        -o-transition: 0.001s all linear;
+                        transition: 0.001s all linear;
                       }
                       
                       .card_inner:hover::after{
                         opacity: 1;
-                        transition: 0.2s all ease;
+                        -webkit-transition: 0.001s all ease;
+                        -o-transition: 0.001s all ease;
+                        transition: 0.001s all ease;
                       }
                       
                   
                       
                       .content{
+                              display: -webkit-box;
+                              display: -ms-flexbox;
                               display: flex;
-                              justify-content: center;
+                              -webkit-box-pack: center;
+                                  -ms-flex-pack: center;
+                                      justify-content: center;
                         position: absolute;
                         bottom: 50%;
                         left: 50%;
-                        transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                            -ms-transform: translateX(-50%) translateY(-50%);
+                                transform: translateX(-50%) translateY(-50%);
                         z-index: 2;
                         opacity: 0;
-                        transition: 0.8s cubic-bezier(0, .91, .1, .9);
+                        -webkit-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                        -o-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                        transition: 0.001s cubic-bezier(0, .91, .1, .9);
                       }
                       
                       .content p{
@@ -220,24 +300,40 @@ display: block;
                         
                         color: #fff;
                       }
+
+                      .content .invert{
+                        position:absolute;
+                        -webkit-transform: rotateX(180deg);
+                          transform: rotateX(180deg);
+                        margin-top: 200px;
+                      }
                       .card_inner:hover .content{
                         bottom: 50%;
                         opacity: 1;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
                         transition: all 0.3s ease-in-out 0s;
                 
                       }
                       
                       .content a{
-                        display: -webkit-flex;
                         display: -ms-flex;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        justify-content: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
                         -ms-align-items: center;
-                        align-items: flex-start;
+                        -webkit-box-align: start;
+                            -ms-flex-align: start;
+                                align-items: flex-start;
                         text-decoration: none;
                         color: #fff;
                         font-size: 1.5rem;
-                        transition: 0.5s ease;
+                        -webkit-transition: 0.001s ease;
+                        -o-transition: 0.001s ease;
+                        transition: 0.001s ease;
                         text-decoration: underline;
                    font-family: 'dream_orphansregular';
                 
@@ -288,7 +384,7 @@ display: block;
 
 }
 
-/* ----------- iPad Pro 10.5" ----------- */
+/* ----------- iPad Pro 10.001" ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
@@ -365,10 +461,19 @@ display: block;
                 }
                 
                 .card_box_container{
+                 display: -webkit-box;
+                 display: -ms-flexbox;
                  display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 flex-direction: column;
+                 -webkit-box-pack: center;
+                     -ms-flex-pack: center;
+                         justify-content: center;
+                 -webkit-box-align: center;
+                     -ms-flex-align: center;
+                         align-items: center;
+                 -webkit-box-orient: vertical;
+                 -webkit-box-direction: normal;
+                     -ms-flex-direction: column;
+                         flex-direction: column;
                  position: relative;
                  margin-top: calc(200px + 48px);
                  margin-left: 140px;
@@ -396,9 +501,15 @@ display: block;
                    background-color: #f7f7f7;
                    color: #121212;
                    height: calc(48px + 48px);
+                   display: -webkit-box;
+                   display: -ms-flexbox;
                    display: flex;
-                   justify-content: center;
-                   align-items: center;
+                   -webkit-box-pack: center;
+                       -ms-flex-pack: center;
+                           justify-content: center;
+                   -webkit-box-align: center;
+                       -ms-flex-align: center;
+                           align-items: center;
                    font-size: 1.5rem;
                    -webkit-transform: rotateX(180deg);
                    transform: rotateX(180deg);
@@ -410,31 +521,45 @@ display: block;
                         position: absolute;
                         top: 0;
                         left: 0;
+                        background: -webkit-gradient(linear,left top, left bottom,from(rgba(18, 18, 18, 1)),to(rgba(18, 18, 18, 1)));
+                        background: -o-linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                         background: linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                         content: '';
                         width: 100%;
                         height: 100%;
                         opacity: 0;
-                        transition: 0.5s all linear;
+                        -webkit-transition: 0.001s all linear;
+                        -o-transition: 0.001s all linear;
+                        transition: 0.001s all linear;
                       }
                       
                       .card_inner:hover::after{
                         opacity: 1;
-                        transition: 0.2s all ease;
+                        -webkit-transition: 0.001s all ease;
+                        -o-transition: 0.001s all ease;
+                        transition: 0.001s all ease;
                       }
                       
                   
                       
                       .content{
+                              display: -webkit-box;
+                              display: -ms-flexbox;
                               display: flex;
-                              justify-content: center;
+                              -webkit-box-pack: center;
+                                  -ms-flex-pack: center;
+                                      justify-content: center;
                         position: absolute;
                         bottom: 50%;
                         left: 50%;
-                        transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                            -ms-transform: translateX(-50%) translateY(-50%);
+                                transform: translateX(-50%) translateY(-50%);
                         z-index: 2;
                         opacity: 0;
-                        transition: 0.8s cubic-bezier(0, .91, .1, .9);
+                        -webkit-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                        -o-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                        transition: 0.001s cubic-bezier(0, .91, .1, .9);
                       }
                       
                       .content p{
@@ -446,24 +571,39 @@ display: block;
                         
                         color: #fff;
                       }
+                      .content .invert{
+                        position:absolute;
+                        -webkit-transform: rotateX(180deg);
+                          transform: rotateX(180deg);
+                        margin-top: 100px;
+                      }
                       .card_inner:hover .content{
                         bottom: 50%;
                         opacity: 1;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
                         transition: all 0.3s ease-in-out 0s;
                 
                       }
                       
                       .content a{
-                        display: -webkit-flex;
                         display: -ms-flex;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        justify-content: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
                         -ms-align-items: center;
-                        align-items: flex-start;
+                        -webkit-box-align: start;
+                            -ms-flex-align: start;
+                                align-items: flex-start;
                         text-decoration: none;
                         color: #fff;
                         font-size: 1rem;
-                        transition: 0.5s ease;
+                        -webkit-transition: 0.001s ease;
+                        -o-transition: 0.001s ease;
+                        transition: 0.001s ease;
                         text-decoration: underline;
                    font-family: 'dream_orphansregular';
                 
@@ -484,10 +624,19 @@ display: block;
                 }
                 
                 .card_box_container{
+                 display: -webkit-box;
+                 display: -ms-flexbox;
                  display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 flex-direction: column;
+                 -webkit-box-pack: center;
+                     -ms-flex-pack: center;
+                         justify-content: center;
+                 -webkit-box-align: center;
+                     -ms-flex-align: center;
+                         align-items: center;
+                 -webkit-box-orient: vertical;
+                 -webkit-box-direction: normal;
+                     -ms-flex-direction: column;
+                         flex-direction: column;
                  position: relative;
                  margin-top: calc(150px );
                  margin-left: 140px;
@@ -515,9 +664,15 @@ display: block;
                    background-color: #f7f7f7;
                    color: #121212;
                    height: calc(48px + 24px);
+                   display: -webkit-box;
+                   display: -ms-flexbox;
                    display: flex;
-                   justify-content: center;
-                   align-items: center;
+                   -webkit-box-pack: center;
+                       -ms-flex-pack: center;
+                           justify-content: center;
+                   -webkit-box-align: center;
+                       -ms-flex-align: center;
+                           align-items: center;
                    font-size: 1rem;
                    -webkit-transform: rotateX(180deg);
                    transform: rotateX(180deg);
@@ -529,31 +684,45 @@ display: block;
                         position: absolute;
                         top: 0;
                         left: 0;
+                        background: -webkit-gradient(linear,left top, left bottom,from(rgba(18, 18, 18, 1)),to(rgba(18, 18, 18, 1)));
+                        background: -o-linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                         background: linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                         content: '';
                         width: 100%;
                         height: 100%;
                         opacity: 0;
-                        transition: 0.5s all linear;
+                        -webkit-transition: 0.001s all linear;
+                        -o-transition: 0.001s all linear;
+                        transition: 0.001s all linear;
                       }
                       
                       .card_inner:hover::after{
                         opacity: 1;
-                        transition: 0.2s all ease;
+                        -webkit-transition: 0.001s all ease;
+                        -o-transition: 0.001s all ease;
+                        transition: 0.001s all ease;
                       }
                       
                   
                       
                       .content{
+                              display: -webkit-box;
+                              display: -ms-flexbox;
                               display: flex;
-                              justify-content: center;
+                              -webkit-box-pack: center;
+                                  -ms-flex-pack: center;
+                                      justify-content: center;
                         position: absolute;
                         bottom: 50%;
                         left: 50%;
-                        transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                            -ms-transform: translateX(-50%) translateY(-50%);
+                                transform: translateX(-50%) translateY(-50%);
                         z-index: 2;
                         opacity: 0;
-                        transition: 0.8s cubic-bezier(0, .91, .1, .9);
+                        -webkit-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                        -o-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                        transition: 0.001s cubic-bezier(0, .91, .1, .9);
                       }
                       
                       .content p{
@@ -565,24 +734,39 @@ display: block;
                         
                         color: #fff;
                       }
+                      .content .invert{
+                        position:absolute;
+                        -webkit-transform: rotateX(180deg);
+                          transform: rotateX(180deg);
+                        margin-top: 70px;
+                      }
                       .card_inner:hover .content{
                         bottom: 50%;
                         opacity: 1;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
                         transition: all 0.3s ease-in-out 0s;
                 
                       }
                       
                       .content a{
-                        display: -webkit-flex;
                         display: -ms-flex;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        justify-content: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
                         -ms-align-items: center;
-                        align-items: flex-start;
+                        -webkit-box-align: start;
+                            -ms-flex-align: start;
+                                align-items: flex-start;
                         text-decoration: none;
                         color: #fff;
                         font-size: 0.7rem;
-                        transition: 0.5s ease;
+                        -webkit-transition: 0.001s ease;
+                        -o-transition: 0.001s ease;
+                        transition: 0.001s ease;
                         text-decoration: underline;
                    font-family: 'dream_orphansregular';
                 
@@ -603,10 +787,19 @@ and (max-device-width: 375px) {
               }
               
               .card_box_container{
+               display: -webkit-box;
+               display: -ms-flexbox;
                display: flex;
-               justify-content: center;
-               align-items: center;
-               flex-direction: column;
+               -webkit-box-pack: center;
+                   -ms-flex-pack: center;
+                       justify-content: center;
+               -webkit-box-align: center;
+                   -ms-flex-align: center;
+                       align-items: center;
+               -webkit-box-orient: vertical;
+               -webkit-box-direction: normal;
+                   -ms-flex-direction: column;
+                       flex-direction: column;
                position: relative;
                margin-top: calc(150px );
                margin-left: 140px;
@@ -634,9 +827,15 @@ and (max-device-width: 375px) {
                  background-color: #f7f7f7;
                  color: #121212;
                  height: calc(48px + 24px);
+                 display: -webkit-box;
+                 display: -ms-flexbox;
                  display: flex;
-                 justify-content: center;
-                 align-items: center;
+                 -webkit-box-pack: center;
+                     -ms-flex-pack: center;
+                         justify-content: center;
+                 -webkit-box-align: center;
+                     -ms-flex-align: center;
+                         align-items: center;
                  font-size: 1rem;
                  -webkit-transform: rotateX(180deg);
                  transform: rotateX(180deg);
@@ -648,31 +847,45 @@ and (max-device-width: 375px) {
                       position: absolute;
                       top: 0;
                       left: 0;
+                      background: -webkit-gradient(linear,left top, left bottom,from(rgba(18, 18, 18, 1)),to(rgba(18, 18, 18, 1)));
+                      background: -o-linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                       background: linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                       content: '';
                       width: 100%;
                       height: 100%;
                       opacity: 0;
-                      transition: 0.5s all linear;
+                      -webkit-transition: 0.001s all linear;
+                      -o-transition: 0.001s all linear;
+                      transition: 0.001s all linear;
                     }
                     
                     .card_inner:hover::after{
                       opacity: 1;
-                      transition: 0.2s all ease;
+                      -webkit-transition: 0.001s all ease;
+                      -o-transition: 0.001s all ease;
+                      transition: 0.001s all ease;
                     }
                     
                 
                     
                     .content{
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
-                            justify-content: center;
+                            -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
                       position: absolute;
                       bottom: 50%;
                       left: 50%;
-                      transform: translateX(-50%) translateY(-50%);
+                      -webkit-transform: translateX(-50%) translateY(-50%);
+                          -ms-transform: translateX(-50%) translateY(-50%);
+                              transform: translateX(-50%) translateY(-50%);
                       z-index: 2;
                       opacity: 0;
-                      transition: 0.8s cubic-bezier(0, .91, .1, .9);
+                      -webkit-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                      -o-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                      transition: 0.001s cubic-bezier(0, .91, .1, .9);
                     }
                     
                     .content p{
@@ -684,24 +897,39 @@ and (max-device-width: 375px) {
                       
                       color: #fff;
                     }
+                    .content .invert{
+                      position:absolute;
+                      -webkit-transform: rotateX(180deg);
+                        transform: rotateX(180deg);
+                      margin-top: 70px;
+                    }
                     .card_inner:hover .content{
                       bottom: 50%;
                       opacity: 1;
+                      -webkit-transition: all 0.3s ease-in-out 0s;
+                      -o-transition: all 0.3s ease-in-out 0s;
                       transition: all 0.3s ease-in-out 0s;
               
                     }
                     
                     .content a{
-                      display: -webkit-flex;
                       display: -ms-flex;
+                      display: -webkit-box;
+                      display: -ms-flexbox;
                       display: flex;
-                      justify-content: center;
+                      -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                              justify-content: center;
                       -ms-align-items: center;
-                      align-items: flex-start;
+                      -webkit-box-align: start;
+                          -ms-flex-align: start;
+                              align-items: flex-start;
                       text-decoration: none;
                       color: #fff;
                       font-size: 0.7rem;
-                      transition: 0.5s ease;
+                      -webkit-transition: 0.001s ease;
+                      -o-transition: 0.001s ease;
+                      transition: 0.001s ease;
                       text-decoration: underline;
                  font-family: 'dream_orphansregular';
               
@@ -721,10 +949,19 @@ and (max-device-width: 375px) {
                 }
                 
                 .card_box_container{
+                 display: -webkit-box;
+                 display: -ms-flexbox;
                  display: flex;
-                 justify-content: center;
-                 align-items: center;
-                 flex-direction: column;
+                 -webkit-box-pack: center;
+                     -ms-flex-pack: center;
+                         justify-content: center;
+                 -webkit-box-align: center;
+                     -ms-flex-align: center;
+                         align-items: center;
+                 -webkit-box-orient: vertical;
+                 -webkit-box-direction: normal;
+                     -ms-flex-direction: column;
+                         flex-direction: column;
                  position: relative;
                  margin-top: calc(150px );
                  margin-left: 140px;
@@ -752,9 +989,15 @@ and (max-device-width: 375px) {
                    background-color: #f7f7f7;
                    color: #121212;
                    height: calc(48px + 24px);
+                   display: -webkit-box;
+                   display: -ms-flexbox;
                    display: flex;
-                   justify-content: center;
-                   align-items: center;
+                   -webkit-box-pack: center;
+                       -ms-flex-pack: center;
+                           justify-content: center;
+                   -webkit-box-align: center;
+                       -ms-flex-align: center;
+                           align-items: center;
                    font-size: 1rem;
                    -webkit-transform: rotateX(180deg);
                    transform: rotateX(180deg);
@@ -766,31 +1009,45 @@ and (max-device-width: 375px) {
                         position: absolute;
                         top: 0;
                         left: 0;
+                        background: -webkit-gradient(linear,left top, left bottom,from(rgba(18, 18, 18, 1)),to(rgba(18, 18, 18, 1)));
+                        background: -o-linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                         background: linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                         content: '';
                         width: 100%;
                         height: 100%;
                         opacity: 0;
-                        transition: 0.5s all linear;
+                        -webkit-transition: 0.001s all linear;
+                        -o-transition: 0.001s all linear;
+                        transition: 0.001s all linear;
                       }
                       
                       .card_inner:hover::after{
                         opacity: 1;
-                        transition: 0.2s all ease;
+                        -webkit-transition: 0.001s all ease;
+                        -o-transition: 0.001s all ease;
+                        transition: 0.001s all ease;
                       }
                       
                   
                       
                       .content{
+                              display: -webkit-box;
+                              display: -ms-flexbox;
                               display: flex;
-                              justify-content: center;
+                              -webkit-box-pack: center;
+                                  -ms-flex-pack: center;
+                                      justify-content: center;
                         position: absolute;
                         bottom: 50%;
                         left: 50%;
-                        transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                            -ms-transform: translateX(-50%) translateY(-50%);
+                                transform: translateX(-50%) translateY(-50%);
                         z-index: 2;
                         opacity: 0;
-                        transition: 0.8s cubic-bezier(0, .91, .1, .9);
+                        -webkit-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                        -o-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                        transition: 0.001s cubic-bezier(0, .91, .1, .9);
                       }
                       
                       .content p{
@@ -802,24 +1059,39 @@ and (max-device-width: 375px) {
                         
                         color: #fff;
                       }
+                      .content .invert{
+                        position:absolute;
+                        -webkit-transform: rotateX(180deg);
+                          transform: rotateX(180deg);
+                        margin-top: 70px;
+                      }
                       .card_inner:hover .content{
                         bottom: 50%;
                         opacity: 1;
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        -o-transition: all 0.3s ease-in-out 0s;
                         transition: all 0.3s ease-in-out 0s;
                 
                       }
                       
                       .content a{
-                        display: -webkit-flex;
                         display: -ms-flex;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        justify-content: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
                         -ms-align-items: center;
-                        align-items: flex-start;
+                        -webkit-box-align: start;
+                            -ms-flex-align: start;
+                                align-items: flex-start;
                         text-decoration: none;
                         color: #fff;
                         font-size: 0.7rem;
-                        transition: 0.5s ease;
+                        -webkit-transition: 0.001s ease;
+                        -o-transition: 0.001s ease;
+                        transition: 0.001s ease;
                         text-decoration: underline;
                    font-family: 'dream_orphansregular';
                 
@@ -841,10 +1113,19 @@ and (max-device-width: 320px) {
               }
               
               .card_box_container{
+               display: -webkit-box;
+               display: -ms-flexbox;
                display: flex;
-               justify-content: center;
-               align-items: center;
-               flex-direction: column;
+               -webkit-box-pack: center;
+                   -ms-flex-pack: center;
+                       justify-content: center;
+               -webkit-box-align: center;
+                   -ms-flex-align: center;
+                       align-items: center;
+               -webkit-box-orient: vertical;
+               -webkit-box-direction: normal;
+                   -ms-flex-direction: column;
+                       flex-direction: column;
                position: relative;
                margin-top: calc(150px );
                margin-left: 130px;
@@ -872,9 +1153,15 @@ and (max-device-width: 320px) {
                  background-color: #f7f7f7;
                  color: #121212;
                  height: calc(48px + 24px);
+                 display: -webkit-box;
+                 display: -ms-flexbox;
                  display: flex;
-                 justify-content: center;
-                 align-items: center;
+                 -webkit-box-pack: center;
+                     -ms-flex-pack: center;
+                         justify-content: center;
+                 -webkit-box-align: center;
+                     -ms-flex-align: center;
+                         align-items: center;
                  font-size: 1rem;
                  -webkit-transform: rotateX(180deg);
                  transform: rotateX(180deg);
@@ -886,31 +1173,45 @@ and (max-device-width: 320px) {
                       position: absolute;
                       top: 0;
                       left: 0;
+                      background: -webkit-gradient(linear,left top, left bottom,from(rgba(18, 18, 18, 1)),to(rgba(18, 18, 18, 1)));
+                      background: -o-linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                       background: linear-gradient(rgba(18, 18, 18, 1),rgba(18, 18, 18, 1));
                       content: '';
                       width: 100%;
                       height: 100%;
                       opacity: 0;
-                      transition: 0.5s all linear;
+                      -webkit-transition: 0.001s all linear;
+                      -o-transition: 0.001s all linear;
+                      transition: 0.001s all linear;
                     }
                     
                     .card_inner:hover::after{
                       opacity: 1;
-                      transition: 0.2s all ease;
+                      -webkit-transition: 0.001s all ease;
+                      -o-transition: 0.001s all ease;
+                      transition: 0.001s all ease;
                     }
                     
                 
                     
                     .content{
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
-                            justify-content: center;
+                            -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
                       position: absolute;
                       bottom: 50%;
                       left: 50%;
-                      transform: translateX(-50%) translateY(-50%);
+                      -webkit-transform: translateX(-50%) translateY(-50%);
+                          -ms-transform: translateX(-50%) translateY(-50%);
+                              transform: translateX(-50%) translateY(-50%);
                       z-index: 2;
                       opacity: 0;
-                      transition: 0.8s cubic-bezier(0, .91, .1, .9);
+                      -webkit-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                      -o-transition: 0.001s cubic-bezier(0, .91, .1, .9);
+                      transition: 0.001s cubic-bezier(0, .91, .1, .9);
                     }
                     
                     .content p{
@@ -922,24 +1223,40 @@ and (max-device-width: 320px) {
                       
                       color: #fff;
                     }
+
+                    .content .invert{
+                      position:absolute;
+                      -webkit-transform: rotateX(180deg);
+                        transform: rotateX(180deg);
+                      margin-top: 70px;
+                    }
                     .card_inner:hover .content{
                       bottom: 50%;
                       opacity: 1;
+                      -webkit-transition: all 0.3s ease-in-out 0s;
+                      -o-transition: all 0.3s ease-in-out 0s;
                       transition: all 0.3s ease-in-out 0s;
               
                     }
                     
                     .content a{
-                      display: -webkit-flex;
                       display: -ms-flex;
+                      display: -webkit-box;
+                      display: -ms-flexbox;
                       display: flex;
-                      justify-content: center;
+                      -webkit-box-pack: center;
+                          -ms-flex-pack: center;
+                              justify-content: center;
                       -ms-align-items: center;
-                      align-items: flex-start;
+                      -webkit-box-align: start;
+                          -ms-flex-align: start;
+                              align-items: flex-start;
                       text-decoration: none;
                       color: #fff;
                       font-size: 0.7rem;
-                      transition: 0.5s ease;
+                      -webkit-transition: 0.001s ease;
+                      -o-transition: 0.001s ease;
+                      transition: 0.001s ease;
                       text-decoration: underline;
                  font-family: 'dream_orphansregular';
               
