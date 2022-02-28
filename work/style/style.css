@@ -150,7 +150,9 @@ header{
  color: var(--primary_color);
  margin-top: -1.8px;
 }
-
+.navbar_container .nav_section ul li a{
+    text-decoration: none;
+}
 
 .navbar_container .nav_section ul li .underline:hover::before{
  content: '';
@@ -972,6 +974,7 @@ margin-left: 24px;
  margin-top: -24px;
  /* margin-bottom: 250px; */
  margin-left: -6px;
+ font-family: var(--primary_font);
 
 }
 .work_container .work_tags_section .work_tag_section{
@@ -1182,67 +1185,64 @@ margin-left: 24px;
  color: #010101;
 }
 
-
-
-/* ========== WORK HAPPENINGS SECTION ======== */
-
-.work_container .other_happening_sections{
- margin: auto 48px;
- color: #757575;
+/* =============== OTHER PROJECTS ================= */
+.work_container .other_project_container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
 }
-.work_container .other_happening_sections p{
- font-size: 24px;
- font-weight: bold;
- margin-bottom: 20px;
+.work_container .other_project_container .project_heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #757575;
 }
-
-
-
-.work_container .other_happening_section{
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-         justify-content: space-between;
- text-align: center;
- /* background-color: red; */
- 
+.work_container .other_project_container .project_container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    
 }
-.work_container .other_happening_section .other_happening_box{
-  width: 200px;
-  height: 200px;
- display: block;
- margin-right: 50px;
- 
+.work_container .other_project_container .project_container a{
+    text-decoration: none;
 }
 
-.work_container .other_happening_section .other_happening_box img{
- width: 100%;
- height: 100%;
- background-size: cover;
- -o-object-fit: fill;
-    object-fit: fill;
- margin-bottom: 20px;
+.work_container .other_project_container .project_container .project_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 10px 40px 40px 0px;
+}
+.work_container .other_project_container .project_container .project_section .project_img{
+    width: 289px;
+    height: 289px;
+    margin-bottom: 20px;
+}
+.work_container .other_project_container .project_container .project_section .project_img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -o-object-fit: fill;
+       object-fit: fill;
 }
 
-.work_container .other_happening_section .other_happening_box .categories_name{
- font-size: 20px;
- color: #ADAAAA;
- font-weight: normal;
- margin-bottom: 16px;
+.work_container .other_project_container .project_container .project_section .project_title p{
+    margin: 0;
+    font-size: 1.25rem;
+    color: #adaaaa;
+    font-family: var(--primary_font);
+    margin-bottom: 10px;
+    font-weight: 600;
 }
-
-.work_container .other_happening_section .other_happening_box .invert{
- -webkit-transform: scale(1,-1);
+.work_container .other_project_container .project_container .project_section .project_title.invert p{
+-webkit-transform: scale(1,-1);
      -ms-transform: scale(1,-1);
          transform: scale(1,-1);
- font-size: 20px;
- color: #414040;
 
+ color: #010101;
 }
-
-
 /* ================ TEMPLATE B ================== */
 
 
@@ -1293,50 +1293,6 @@ margin-left: 24px;
    }
 
 
-
-
-   /* ========== WORK HAPPENINGS SECTION ======== */
-
-.work_container .other_happening_sections{
-    margin: auto 48px;
-    margin-bottom: 200px;
-  }
-  .work_container .other_happening_sections p{
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 24px;
-  }
-  .work_container .other_happening_section{
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-  }
-  .work_container .other_happening_section .other_happening_box{
-     width: 30%;
-     height: 250px;
-    display: block;
-  
-  }
-  
-  .work_container .other_happening_section .other_happening_box img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    margin-bottom: 20px;
-  }
-  
-  .work_container .other_happening_section .other_happening_box .categories_name{
-    font-size: 20px;
-    color: #ADAAAA;
-    font-weight: normal;
-    margin-bottom: 10px;
-  }
-  
-  .work_container .other_happening_section .other_happening_box .invert{
-    transform: scale(1,-1);
-    font-size: 20px;
-    color: #414040;
-  }
 
 
 
@@ -1431,6 +1387,9 @@ margin-left: 24px;
     height: 60px;
 
    
+   }
+   .footer_container .footer_section .footer_description p{
+       margin: 0;
    }
    
    .footer_container .footer_section .social_media_icons{
@@ -2592,56 +2551,7 @@ margin-left: 24px;
   
   
   
-  /* ========== WORK HAPPENINGS SECTION ======== */
-  
-  .work_container .other_happening_sections{
-   margin: auto 48px;
-   color: #757575;
-  }
-  .work_container .other_happening_sections p{
-   font-size: 24px;
-   font-weight: bold;
-   margin-bottom: 20px;
-  }
-  .work_container .other_happening_section{
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-           justify-content: space-between;
-   text-align: center;
-  }
-  .work_container .other_happening_section .other_happening_box{
-    width: 200px;
-    height: 200px;
-   display: block;
-  
-  }
-  
-  .work_container .other_happening_section .other_happening_box img{
-   width: 100%;
-   height: 100%;
-   -o-object-fit: fill;
-      object-fit: fill;
-   margin-bottom: 20px;
-  }
-  
-  .work_container .other_happening_section .other_happening_box .categories_name{
-   font-size: 20px;
-   color: #ADAAAA;
-   font-weight: normal;
-   margin-bottom: 16px;
-  }
-  
-  .work_container .other_happening_section .other_happening_box .invert{
-   -webkit-transform: scale(1,-1);
-       -ms-transform: scale(1,-1);
-           transform: scale(1,-1);
-   font-size: 20px;
-   color: #414040;
-  
-  }
+ 
 
   /* =========== BOTTOM ABOUT SECTION =============== */
 
@@ -3041,21 +2951,29 @@ transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 
     background-color: #fff;
     border: 1px solid #f3f2ef;
 }
+.work_section .table .trow a{
+    color: #010101;
+}
 
 .work_section .table .thead-dark .trow .active{
     background-color: #54654F;
-    color: #fff;
 }
+.work_section .table .thead-dark .trow .active a{
+    color: #fff;
+} 
 .work_section .table .thead-dark .trow .more{
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: auto;
+    text-align: center;
 }
 .work_section .table .thead-dark .trow .more .fas{
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-top: 5%;
 }
+
 .work_section .table .trow .discover{
     letter-spacing: 0.01px;
     margin-right: 5px;
@@ -3509,11 +3427,9 @@ color: #757575;
 
 
 .work_container .work_image_section .portrait .portrait_sec .work_description .descr{
- /* padding-right: 80px;  */
- /* padding: 0 40px; */
  width: 100vw;
  padding: 0 40px;
- /* padding-right: 40px; */
+
 }
 .work_container .work_image_section .portrait .portrait_sec .work_description .work_description_center{
  height: 0px;
@@ -3595,7 +3511,6 @@ padding: 0px 40px;
 /* ========== WORK FULL DESCRIPTION SECTION ========== */
 
 .work_container .work_full_description_section{
- /* margin: auto 15%; */
  font-size: 18px;
  line-height: 32px;
  width: 100vw;
@@ -3612,7 +3527,7 @@ padding: 0px 40px;
 .work_container .testimonial_section .testimonial_desc_left{
  width: 100vw;
  padding: 0 40px;
-/* margin-top: 48px; */
+
  margin: -48px 0px;
 }
 
@@ -3693,38 +3608,12 @@ background-color: #f4f4f4;
 }
 
 
+/* =========== OTHER PROJECTS ============ */
+.work_container .other_project_container{
+    margin: 0 48px;
+}
 
 
-/* ========== WORK HAPPENINGS SECTION ======== */
-
-.work_container .other_happening_sections{
-    margin: auto 48px;
-    margin-bottom: 140px;
-  }
-  .work_container .other_happening_sections p{
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .work_container .other_happening_sections .hr{
-    height: 2px;
-    width: 90vw;
-   padding: 0 20px;
-   background: var(--border);
-   margin-bottom: 20px;
-   /* margin-top: -100px; */
-  }
-  .work_container .other_happening_section{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-  }
-  .work_container .other_happening_section .other_happening_box{
-     width: 250px;
-     height: 250px;
-    display: block;
-    margin-right: 0px;
-  }
  
   /* =========== BREADCRUMBS ========== */
   .breadcrumb_container{
@@ -3811,40 +3700,7 @@ background-color: #f4f4f4;
    margin-top: 24px;
    display: block;
  }
- /* ========== WORK HAPPENINGS SECTION ======== */
 
-.work_container .other_happening_sections{
- margin: auto 48px;
- margin-bottom: 150px;
-}
-.work_container .other_happening_sections p{
- font-size: 24px;
- font-weight: bold;
- margin-bottom: 20px;
-}
-.work_container .other_happening_sections .hr{
- height: 2px;
- width: 90vw;
-padding: 0 20px;
-background: var(--border);
-margin-bottom: 20px;
-/* margin-top: -100px; */
-}
-.work_container .other_happening_section{
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-         justify-content: space-between;
- text-align: center;
-}
-.work_container .other_happening_section .other_happening_box{
-  width: 200px;
-  height: 200px;
- display: block;
-
-}
 
 /* ===== TABLES ===== */
 
@@ -3934,37 +3790,6 @@ margin: 10px;
  margin-right: 3%;
 } 
 
-
- /* ========== WORK HAPPENINGS SECTION ======== */
-
- .work_container .other_happening_sections{
-    margin: auto 48px;
-    margin-bottom: 140px;
-  }
-  .work_container .other_happening_sections p{
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  .work_container .other_happening_sections .hr{
-    height: 2px;
-    width: 90vw;
-   padding: 0 20px;
-   background: var(--border);
-   margin-bottom: 20px;
-   /* margin-top: -100px; */
-  }
-  .work_container .other_happening_section{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-  }
-  .work_container .other_happening_section .other_happening_box{
-     width: 200px;
-     height: 200px;
-    display: block;
-  
-  }
 
 .footer_container .breadcrumbs{
     width: 80%;
@@ -4780,54 +4605,22 @@ background-color: #f4f4f4;
  padding: 0 20px;
 }
 
-/* ========== WORK HAPPENINGS SECTION ======== */
-
-.work_container .other_happening_sections{
-    /* margin: 0px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 0px;
-    text-align: left;
-  }
-  .work_container .other_happening_sections p{
-      /* margin-left: -40px; */
-      /* width: 100%; */
-  }
-  
-  .work_container .other_happening_sections .happenings{
-    font-size: 24px;
-    font-weight: bold;
-    /* margin-bottom: 20px; */
-  }
-  
-  .work_container .other_happening_sections .hr{
+/* =============== OTHER PROJECTS =============== */
+.work_container .other_project_container{
+    margin: 0 20px;
+}
+.work_container .other_project_container .project_heading span{
+    display: block;
+}
+.work_container .other_project_container .hr{
     height: 2px;
-    width: 90vw;
-   padding: 0 20px;
    background: var(--border);
    margin-bottom: 20px;
-   /* margin-top: -100px; */
-  }
-  
-  .work_container .other_happening_section{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+   width: 90vw;
+}
+.work_container .other_project_container .project_container{
     flex-direction: column;
-    margin-bottom: 100px;
-  }
-  .work_container .other_happening_section .other_happening_box{
-     width: 250px;
-     height: 250px;
-    display: block;
-    margin-bottom: 120px;
-  }
-  .work_container .other_happening_section .other_happening_box p{
-      width: 100%;
-      margin-left: 0px;
-  }
+}
 
     /* =========== BREADCRUMBS ========== */
     .breadcrumb_container .breadcrumbs{
@@ -4866,9 +4659,7 @@ background-color: #f4f4f4;
     height: 60px;
 
   }
-  .footer_container .footer_section  p{
-    font-size: 10px;
-  }
+ 
   .footer_container .footer_section .social_media_icons{
     width: 120px;
     display: flex;
@@ -4963,15 +4754,7 @@ background-color: #f4f4f4;
  .work_container .gallery_container .gallery .thumbnail_img.hide{
   display: none;
  }
- 
- .work_container .other_happening_sections .happenings{
-  font-size: 22px;
-  font-weight: bold;
 
- }
- .work_container .other_happening_sections p{
-    margin-left: -30px;
-}
 
  }
 
@@ -5036,13 +4819,7 @@ opacity: 0.5;
  display: none;
 }
 
-.work_container .other_happening_sections .happenings{
- font-size: 22px;
- font-weight: bold;
- /* margin-bottom: 20px; */
- margin-left: -40px;
 
-}
 }
 
 @media screen and (max-device-width: 375px) {
@@ -5147,23 +4924,7 @@ margin: 5px;
 }
 
 
-/* .work_container .testimonial_section .testimonial{
- font-size: 12px;
- position: absolute;
- margin-top: 240px;
- margin-right: -220px;
- color: #69696B;
- opacity: 0.5;
- 
- } */
 
-.work_container .other_happening_sections .happenings{
- font-size: 22px;
- font-weight: bold;
- /* margin-bottom: 20px; */
- margin-left: -30px;
-
-}
 
 
 .work_container .work_image_section .portrait .portrait_sec .work_description .work_description_center{
@@ -5330,13 +5091,7 @@ margin: 5px;
  display: none;
 }
 
-.work_container .other_happening_sections .happenings{
- font-size: 22px;
- font-weight: bold;
- /* margin-bottom: 20px; */
- margin-left: -30px;
 
-}
 
 }
 
@@ -5351,14 +5106,7 @@ margin: 5px;
    margin-top: 24px;
    display: block;
  }
-.work_container .other_happening_sections .happenings{
- font-size: 22px;
- font-weight: bold;
- /* margin-bottom: 20px; */
- /* margin-left: 10px; */
- width: 300px;
 
-}
 
 /* =======  TEMPLATE B ========== */
 .work_container .work_main_section .work_detail.templateB{
