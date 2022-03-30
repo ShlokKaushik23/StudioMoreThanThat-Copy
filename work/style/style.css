@@ -1216,8 +1216,8 @@ margin-left: 24px;
     padding: 10px 40px 40px 0px;
 }
 .work_container .other_project_container .project_container .project_section .project_img{
-    width: 289px;
-    height: 289px;
+    width: 230px;
+    height: 230px;
     margin-bottom: 20px;
 }
 .work_container .other_project_container .project_container .project_section .project_img img{
@@ -1271,6 +1271,7 @@ margin-left: 24px;
 
    }
    
+   
 
    .work_container .work_main_section .template_img.templateB{
 
@@ -1312,12 +1313,13 @@ margin-left: 24px;
       width: 100%;
     /* margin-left: calc(100px); */
     align-items: center;
+    margin-left: 10px;
   }
   .breadcrumb_container .breadcrumbs .breads a{
     color: #fff;
     /* position: relative; */
    font-family: 'dream_orphansregular';
-
+   font-size: 0.8rem;
   }
   .breadcrumb_container .breadcrumbs .breads{
       display: flex;
@@ -1328,7 +1330,7 @@ margin-left: 24px;
      color: #fff;
   }
  .breadcrumb_container .breadcrumbs .breads img{
-      width: 20px;
+      width: 18px;
   }
 
      /* ========== FOOTER CONTAINER ======== */
@@ -2933,16 +2935,18 @@ transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 
 /* ------ BOOSTRAP TABLE ------- */
 .work_section .table{
    display: inline-table;
-   background-color: #f3f2ef;
+   background-color: #fff;
    font-family: 'dream_orphansregular';  
    font-size: 2rem; 
    margin-top: calc(159px + 96px);
    margin-bottom: 60px;
    border-collapse: collapse;
    letter-spacing: 0.2rem;
-
    width: 100%;
    text-align: left; 
+}
+.work_section .table td{
+    border: none;
 }
 .work_section .table #menu{
     display: none;
@@ -2951,6 +2955,7 @@ transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 
     background-color: #fff;
     border: 1px solid #f3f2ef;
 }
+
 .work_section .table .trow a{
     color: #010101;
 }
@@ -3365,6 +3370,12 @@ color: #757575;
 .work_container .work_image_section .portrait .portrait_sec img{
   padding: 0 40px;
 }
+
+.work_container .work_image_section .portrait .portrait_sec video{
+    height: 100%;
+    width: 100%;
+    padding: 0 40px;
+  }
 .work_container .work_image_section .portrait .portrait_sec:first-child{
  margin-bottom: 48px;
 
@@ -4301,7 +4312,11 @@ margin: 5px;
  /* padding: 0 20px; */
  
 }
-
+.work_container .work_image_section .portrait .portrait_sec video{
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+  }
 .work_container .work_image_section .project_big_section{
  width: 100vw;
  padding: 0 20px;
